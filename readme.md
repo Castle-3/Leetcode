@@ -57,4 +57,4 @@
 | 515  | [在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/) | C++      | 中等      |
 | 559  | [N 叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/) | C++      | 简单      |
 | 637  | [二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/) | C++      | 简单      |
-
+| 654  | [最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree/) | C++      | 中等      |
