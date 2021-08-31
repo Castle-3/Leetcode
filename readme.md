@@ -56,5 +56,7 @@
 | 513  | [找树左下角的值](https://leetcode-cn.com/problems/find-bottom-left-tree-value/) | C++      | 中等      |
 | 515  | [在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/) | C++      | 中等      |
 | 559  | [N 叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/) | C++      | 简单      |
+| 617  | [合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/) | C++      | 简单      |
 | 637  | [二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/) | C++      | 简单      |
 | 654  | [最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree/) | C++      | 中等      |
+| 700  | [二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree/) | C++      | 简单      |
