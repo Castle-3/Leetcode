@@ -1,24 +1,20 @@
-#include"iostream"
+#include "tree.h"
+#include"stack"
 
 using namespace std;
 
-typedef void (*func)(void);
-
-void task1(){
-    cout << "first" << endl;
-}
-
-void task2(){
-    cout << "second" << endl;
-}
-
-void task3(){
-    cout << "third" << endl;
-}
-
 int main(){
-    func fff[] = {task1, task2, task3};
+    char s[] = "[1, null, 3, 2]";
+    TreeNode* root = createTree(s, sizeof(s) / sizeof(s[0]));
+    stack<TreeNode*> st;
+    st.push(root);
 
-    func a = fff[0];
-    a();
+    while(!st.empty()){
+        TreeNode* node = st.top();
+        cout << node->val << " ";
+        st.pop();
+        if(node->left) st.push(node->left);
+        if(node->right) st.push(node->right);
+        delete node;
+    }
 }
