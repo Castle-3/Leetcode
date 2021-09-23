@@ -69,7 +69,7 @@ TreeNode* createTree(char* str, int size){
     int count = vec.size(), flag = 0;
     for(int i = 0; 2 * (i - flag) < count; i++){
         if(vec[i] != NULL){
-            vec[i]->left = vec[2 * (i - flag) + 1];
+            if(2 * (i - flag) + 1 < count) vec[i]->left = vec[2 * (i - flag) + 1];
             if(2 * (i - flag) + 2 < count) vec[i]->right = vec[2 * (i - flag) + 2];
         }
         else{
@@ -81,4 +81,15 @@ TreeNode* createTree(char* str, int size){
         }
     }
     return root;
+}
+
+
+void deleteTree(TreeNode* root){
+    if(root == NULL) return;
+    TreeNode* leftNode = root->left;
+    TreeNode* rightNode = root->right;
+    delete root;
+    root = NULL;
+    if(leftNode) deleteTree(leftNode);
+    if(rightNode) deleteTree(rightNode);
 }
