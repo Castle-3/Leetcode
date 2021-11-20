@@ -27,7 +27,7 @@ public:
 
         for(int i = startindex; i < s.size(); i++){
             if(ishuiwen(s, startindex, i)){
-                string tmp = s.substr(startindex, i - startindex + 1);\
+                string tmp = s.substr(startindex, i - startindex + 1);
                 vec.push_back(tmp);
             }
             else continue;
